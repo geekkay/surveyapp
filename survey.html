@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lifestyle Survey</title>
+  <link rel="stylesheet" href="surveyStyle.css">
+</head>
+<body>
+
+  <nav>
+    <a href="survey.html">FILL OUT SURVEY</a>
+    <a href="results.php">VIEW SURVEY RESULTS</a>
+  </nav>
+
+  <form action="submit.php" method="POST">
+
+<p>Personal Details</p>
+
+<div class="input-group">
+  <label for="fullname">Full Names:</label>
+  <input type="text" name="fullname" id="fullname" required>
+</div>
+
+<div class="input-group">
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email" required>
+</div>
+
+<div class="input-group">
+  <label for="dob">Date of Birth:</label>
+  <input type="date" name="dob" id="dob" required>
+</div>
+
+<div class="input-group">
+  <label for="contact">Contact Number:</label>
+  <input type="tel" name="contact" id="contact" required>
+</div>
+
+<br>
+
+<p>What is your favorite food?</p>
+<div class="checkbox-group">
+  <label><input type="checkbox" name="foods[]" value="Pizza"> Pizza</label>
+  <label><input type="checkbox" name="foods[]" value="Pasta"> Pasta</label>
+  <label><input type="checkbox" name="foods[]" value="Pap and Wors"> Pap and Wors</label>
+  <label><input type="checkbox" name="foods[]" value="Other"> Other</label>
+</div>
+
+
+
+<br>
+
+  
+  <p>
+    Please rate your level of agreement on a scale from 1 to 5, with 1 being "strongly agree" and 5 being "strongly disagree."
+  </p>
+
+  <table border="1" cellpadding="10">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Strongly Agree (1)</th>
+        <th>Agree (2)</th>
+        <th>Neutral (3)</th>
+        <th>Disagree (4)</th>
+        <th>Strongly Disagree (5)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>I like to watch movies</td>
+        <td><input type="radio" name="movies" value="1" required></td>
+        <td><input type="radio" name="movies" value="2"></td>
+        <td><input type="radio" name="movies" value="3"></td>
+        <td><input type="radio" name="movies" value="4"></td>
+        <td><input type="radio" name="movies" value="5"></td>
+      </tr>
+      <tr>
+        <td>I like to listen to radio</td>
+        <td><input type="radio" name="radio" value="1" required></td>
+        <td><input type="radio" name="radio" value="2"></td>
+        <td><input type="radio" name="radio" value="3"></td>
+        <td><input type="radio" name="radio" value="4"></td>
+        <td><input type="radio" name="radio" value="5"></td>
+      </tr>
+      <tr>
+        <td>I like to eat out</td>
+        <td><input type="radio" name="eatout" value="1" required></td>
+        <td><input type="radio" name="eatout" value="2"></td>
+        <td><input type="radio" name="eatout" value="3"></td>
+        <td><input type="radio" name="eatout" value="4"></td>
+        <td><input type="radio" name="eatout" value="5"></td>
+      </tr>
+      <tr>
+        <td>I like to watch TV</td>
+        <td><input type="radio" name="tv" value="1" required></td>
+        <td><input type="radio" name="tv" value="2"></td>
+        <td><input type="radio" name="tv" value="3"></td>
+        <td><input type="radio" name="tv" value="4"></td>
+        <td><input type="radio" name="tv" value="5"></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+<br>
+
+<button type="submit" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px;">
+  SUBMIT
+</button>
+
+</form>
+
+</body>
+</html>
